@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="taskcss.css" />
+    
+</head>
+<body>
+     <div class="form-class">
+      <div class="container">
+        <form>
+    
+    <table class="tbl">
+        <tr class="bg-info">
+        <th>Rank</th>
+        <th>Name</th>
+        <th>Score</th>
+        <th>Code</th>
+        </tr>
+
+        <tbody id="myTable"></tbody>
+
+    </table>
+     </form>
+      </div>
+    </div>
+    <script src="final.js"></script>
+    <script>
+        // document.write(a)
+        // builttable(studentDetails);
+        function builttable(data){
+  let table = document.getElementById("myTable")
+
+
+for(let i=0; i<data.length; i++){
+  let row= `<tr>
+  <td>${[i+1]}</td>
+   <td>${(data[i].name)}</td>
+   <td>${(data[i].score)}</td>
+   <td>${(data[i].code)}</td>
+  </tr>`
+  table.innerHTML+=row
+}
+        }
+         builttable(q);
+
+    </script>
+</body>
+</html>

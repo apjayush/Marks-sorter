@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login to dashoboard</title>
+    <link rel="stylesheet" href="taskcss.css" />
+  </head>
+  <!-- <script type="text/javascript"></script> -->
+  <script>
+    function dashboard(form) {
+      if (
+        (form.email.value == "harsh" && form.pass.value == "qwerty01$0(") ||
+        (form.email.value == "shivam" && form.pass.value == "asdfgh99A@")
+      ) {
+        location = "retriever.html";
+      } else {
+        alert("invalid user name and password");
+      }
+    }
+  </script>
+  <body>
+    <div class="form-class">
+      <div class="container">
+        <form>
+          	Username:<input type="text" name="email" /> Password :<input
+            type="password"
+            name="pass"
+          />
+          <input type="button" value="Login" onclick="dashboard(form)" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

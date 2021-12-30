@@ -1,0 +1,26 @@
+.form-class{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+    border: 2px solid red;
+    height: 400px;
+    width: 400px;
+    border-radius: 5px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    padding: 5px;
+    margin: 15px;
+}
